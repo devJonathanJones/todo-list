@@ -1,0 +1,191 @@
+/*
+ * Project Name: To-Do List
+ * File Name: style.css
+ * Author: Jonathan Jones
+ * Date: 05.12.2025
+ * Description: Basic To-Do List app
+ */
+
+
+/******************************************
+/* CSS
+/*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* CUSTOM PROPERTIES
+/*******************************************/
+
+:root {
+
+  /* Colors */
+  --clr-bg: #fff;
+  --clr-main: #000;
+  --clr-alt: #414141;
+  --clr-light: #808080;
+
+  /* Font */
+  --ff-main: "Roboto", sans-serif;
+  --fs-medium: 1.6rem;
+  --fs-large: 2.4rem;
+}
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+html {
+  font-family: var(--ff-main);
+}
+
+body {
+  font-size: var(--fs-medium);
+}
+
+h1 {
+  font-size: var(--fs-large);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-alt);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.task-completed {
+  text-decoration: line-through !important;
+  color: var(--clr-light) !important;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  width: 33vw;
+  margin: 5rem auto 0 auto;
+}
+
+.nav-tab {
+  display: flex;
+  border-bottom: 1px solid var(--clr-light);
+}
+
+.nav-tab > * {
+  width: 50%;
+  text-align: center;
+}
+
+.selected-tab {
+  column-rule: var(--clr-main);
+  border-bottom: 2px solid var(--clr-main);
+}
+
+.nav-tab a {
+  display: block;
+}
+
+#add-task {
+  display: flex;
+  justify-content: space-between;
+}
+
+#add-task input {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  width: 92.5%;
+}
+
+#add-task-button {
+  color: white;
+  background-color: var(--clr-alt);
+  border: 0;
+  border-radius: .5rem;
+  padding: .4rem .5rem;
+}
+
+#add-task-button:hover {
+  background-color: var(--clr-light);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--clr-light);
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#delete-task {
+  border: 0;
+  background-color: white;
+  color: var(--clr-alt);
+  margin-left: auto;
+}
+
+#delete-task:hover {
+  color: var(--clr-light);
+}
+
+.task-list p {
+  margin: 0;
+  margin-left: .5rem;
+}
+
+#task-checkbox {
+  accent-color: var(--clr-alt);
+  transform: scale(1.5);
+}
+
+.task-list {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+#clear-tasks {
+  background-color: #eb5151;
+  color: white;
+  border: solid #ff0000 2px;
+  border-radius: .5rem;
+  padding: .5rem;
+  margin-top: 1rem;
+}
+
+#clear-tasks:hover {
+  background-color: #f16565;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+

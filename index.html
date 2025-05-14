@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="to-do list application">
+    	<meta name="keywords" content="todo, productivity, focus">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+		<title>To-Do List</title>
+
+		<!-- fonts -->
+
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="assets/styles/normalize.css">
+		<link rel="stylesheet" href="assets/styles/style.css">
+	</head>
+	<body>
+		<header>
+			<H1>Your To Do</H1>
+			<nav>
+				<ul class="nav-tab">
+					<li class="tab selected-tab"><a href="#" id="active-tab">Active</a></li>
+					<li class="tab"><a href="#" id="deleted-tab">Deleted</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="add-task">
+				<input type="text" name="input-task" id="input-task" placeholder="Enter your task">
+				<button id="add-task-button"><i class="fa-solid fa-plus"></i></button>
+			</section>
+			<section class="task-list active-task-list active">
+				<ul id="" class="tasks active-tasks">
+					<li class="task-item">
+						<input type="checkbox" name="task-checkbox" id="task-checkbox">
+						<p>test active task</p>
+						<button id="delete-task"><i class="fa-solid fa-xmark"></i></button>
+					</li>
+					<li class="task-item">
+						<input type="checkbox" name="task-checkbox" id="task-checkbox">
+						<p>test active task</p>
+						<button id="delete-task"><i class="fa-solid fa-xmark"></i></button>
+					</li>
+					<li class="task-item">
+						<input type="checkbox" name="task-checkbox" id="task-checkbox">
+						<p>test active task</p>
+						<button id="delete-task"><i class="fa-solid fa-xmark"></i></button>
+					</li>
+				</ul>
+			</section>
+			<section class="task-list deleted-task-list">
+				<ul id="" class="tasks deleted-tasks">
+					<li class="task-item">
+						<input type="checkbox" name="task-checkbox" id="task-checkbox">
+						<p>test deleted task</p>
+						<button id="delete-task"><i class="fa-solid fa-xmark"></i></button>
+					</li>
+				</ul>
+				<button id="clear-tasks">Clear Tasks</button>
+			</section>
+		</main>
+		<script src="https://kit.fontawesome.com/e9408a1737.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/scripts/main.js"></script>
+	</body>
+</html>
