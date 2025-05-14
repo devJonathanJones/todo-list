@@ -1,7 +1,7 @@
 # Basic To-Do List
 A very basic to-do list app. First attempt at making one of these but I expect it will be fairly easy.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://devjonathanjones.github.io/todo-list/
 
 
 ## How It's Made:
